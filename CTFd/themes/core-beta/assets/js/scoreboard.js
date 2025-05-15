@@ -7,12 +7,13 @@ window.Alpine = Alpine;
 window.CTFd = CTFd;
 
 // Default scoreboard polling interval to every 5 minutes
-const scoreboardUpdateInterval = window.scoreboardUpdateInterval || 300000;
+// const scoreboardUpdateInterval = window.scoreboardUpdateInterval || 300000;
+const scoreboardUpdateInterval = window.scoreboardUpdateInterval || 3000;
 
 Alpine.data("ScoreboardDetail", () => ({
   data: {},
   show: true,
-  activeBracket: null,
+  activeBracket: null,  
 
   async update() {
     this.data = await CTFd.pages.scoreboard.getScoreboardDetail(10, this.activeBracket);
@@ -29,6 +30,7 @@ Alpine.data("ScoreboardDetail", () => ({
 
     setInterval(() => {
       this.update();
+      console.log("ScoreboardDetail updated every " + scoreboardUpdateInterval / 1000 + " seconds");
     }, scoreboardUpdateInterval);
   },
 }));
@@ -52,6 +54,7 @@ Alpine.data("ScoreboardList", () => ({
 
     setInterval(() => {
       this.update();
+      console.log("ScoreboardList updated every 6AM:" + scoreboardUpdateInterval / 1000 + " seconds");
     }, scoreboardUpdateInterval);
   },
 }));

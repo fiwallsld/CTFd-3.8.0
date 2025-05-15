@@ -38,7 +38,7 @@
     ]
   },
   "assets/js/scoreboard.js": {
-    "file": "assets/scoreboard.a864124c.js",
+    "file": "assets/scoreboard.85bb6598.js",
     "src": "assets/js/scoreboard.js",
     "isEntry": true,
     "imports": [
@@ -56,24 +56,24 @@
     ]
   },
   "assets/js/teams/public.js": {
-    "file": "assets/teams_public.9dafcf95.js",
+    "file": "assets/teams_public.fdb09506.js",
     "src": "assets/js/teams/public.js",
     "isEntry": true,
     "imports": [
       "assets/js/index.js",
-      "_userscore.1aecc7d1.js",
+      "_userscore.796cbb65.js",
       "_index.1cf73b05.js",
       "_echarts.128204f2.js"
     ]
   },
   "assets/js/teams/private.js": {
-    "file": "assets/teams_private.fb85fb6e.js",
+    "file": "assets/teams_private.fcc41b50.js",
     "src": "assets/js/teams/private.js",
     "isEntry": true,
     "imports": [
       "assets/js/index.js",
       "_clipboard.25a605c3.js",
-      "_userscore.1aecc7d1.js",
+      "_userscore.796cbb65.js",
       "_index.1cf73b05.js",
       "_echarts.128204f2.js"
     ]
@@ -87,23 +87,23 @@
     ]
   },
   "assets/js/users/public.js": {
-    "file": "assets/users_public.6f6cb13c.js",
+    "file": "assets/users_public.601ac2d8.js",
     "src": "assets/js/users/public.js",
     "isEntry": true,
     "imports": [
       "assets/js/index.js",
-      "_userscore.1aecc7d1.js",
+      "_userscore.796cbb65.js",
       "_index.1cf73b05.js",
       "_echarts.128204f2.js"
     ]
   },
   "assets/js/users/private.js": {
-    "file": "assets/users_private.f2cbeed7.js",
+    "file": "assets/users_private.a6835129.js",
     "src": "assets/js/users/private.js",
     "isEntry": true,
     "imports": [
       "assets/js/index.js",
-      "_userscore.1aecc7d1.js",
+      "_userscore.796cbb65.js",
       "_index.1cf73b05.js",
       "_echarts.128204f2.js"
     ]
@@ -136,15 +136,15 @@
       "_echarts.128204f2.js"
     ]
   },
-  "_userscore.1aecc7d1.js": {
-    "file": "assets/userscore.1aecc7d1.js",
+  "_userscore.796cbb65.js": {
+    "file": "assets/userscore.796cbb65.js",
     "imports": [
       "assets/js/index.js",
       "_index.1cf73b05.js"
     ]
   },
   "assets/scss/main.scss": {
-    "file": "assets/main.0c7144ba.css",
+    "file": "assets/main.a433f3cc.css",
     "src": "assets/scss/main.scss",
     "isEntry": true
   }

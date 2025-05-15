@@ -50,7 +50,7 @@ export function getOption(id, name, solves, awards, optionMerge) {
         filterMode: "filter",
         height: 20,
         top: 35,
-        fillerColor: "rgba(233, 236, 241, 0.4)",
+        fillerColor: "rgba(245, 248, 252, 0.58)",
       },
     ],
     series: [],

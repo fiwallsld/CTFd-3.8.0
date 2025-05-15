@@ -86,7 +86,8 @@ export function getOption(mode, places, optionMerge) {
       },
       itemStyle: {
         normal: {
-          color: colorHash(places[teams[i]]["name"] + places[teams[i]]["id"]),
+          color: generateDistinctColor(i, teams.length) 
+          // colorHash(places[teams[i]]["name"] + places[teams[i]]["id"]),
         },
       },
       data: scores,
@@ -98,4 +99,10 @@ export function getOption(mode, places, optionMerge) {
     option = mergeObjects(option, optionMerge);
   }
   return option;
+}
+
+
+function generateDistinctColor(index, total) {
+  const hue = (index * (360 / total)) % 360; // chia đều vòng tròn màu
+  return `hsl(${hue}, 70%, 60%)`; // màu tươi, độ sáng hợp lý
 }

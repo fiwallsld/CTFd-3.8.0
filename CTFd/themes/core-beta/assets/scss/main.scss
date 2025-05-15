@@ -1,3 +1,4 @@
+
 @use "bootstrap/scss/bootstrap" as * with (
   $info: #5c728f
 );
@@ -13,9 +14,32 @@
 @use "includes/utils/min-height";
 @use "includes/utils/cursors";
 @use "includes/utils/lolight";
-
 @use "includes/icons/award-icons";
 @use "includes/icons/flag-icons";
+
+[data-bs-theme='light'] {
+  --bg-primary-light: #a6a6a6;
+  // General Colors
+  --bs-dark: var(--bg-primary-light);
+  --bs-body-bg: var(--bg-primary-light);
+  --bs-dark-rgb:var(--bg-primary-light);
+  --bs-primary: #060d14;
+  --bs-heading-color: var(--bs-primary);
+}
+
+[data-bs-theme=dark] {
+  color-scheme: dark;
+}
+
+*,*:before,*:after {
+  box-sizing: border-box
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+      scroll-behavior: smooth
+  }
+}
 
 h1,
 h2 {
