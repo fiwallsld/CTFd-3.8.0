@@ -3,6 +3,8 @@ import { mergeObjects } from "../../objects";
 import { cumulativeSum } from "../../math";
 import dayjs from "dayjs";
 
+import { chartColors } from "../../../color_chart";
+
 export function getOption(mode, places, optionMerge) {
   let option = {
     title: {
@@ -86,7 +88,8 @@ export function getOption(mode, places, optionMerge) {
       },
       itemStyle: {
         normal: {
-          color: generateDistinctColor(i, teams.length) 
+          color: i % 2 === 0 ? chartColors[i] : chartColors[i + 10],
+          // color: generateDistinctColor(i, teams.length) 
           // colorHash(places[teams[i]]["name"] + places[teams[i]]["id"]),
         },
       },
